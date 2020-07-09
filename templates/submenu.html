@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+        {%- set subsections = ["concept", "system", "exhibited", "collaborators", "more"] %}
+        {%- set currentsubsection = current_path | split(pat="/") | nth(n = 2) %}
+        {%- for subsection in subsections %}
+        <li {% if currentsubsection == subsection %}class="mSEL"{% endif %}>
+            <a href="/{{ section.path | safe }}{{ subsection }}">{{ subsection }}</a>
+        </li>
+        {%- endfor %}
+    </ul>
+</nav>

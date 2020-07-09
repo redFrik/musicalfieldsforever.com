@@ -1,0 +1,10 @@
++++
+template = "about.html"
+title = "Musical Fields Forever"
++++
+
+MusicalFieldsForever is a group of Artists and also a Project. The members have diverse artistic backgrounds within music, industrial design, interaction design, but share the use of Networking models and the Computer as their major working tool and material. They also share a vision for the democratic potential of these technologies.
+
+The project is to explore new forms of expression in interactive media by creating open, audio-tactile art installations. They call their installations musical fields. A musical field is open for co-creation on many different levels, both on a material level, musically as well as open for diverse interpretations. Therefore a musical field can be open for different movements and actions like seeing, creating music individually and for collaboration between many people. A musical field can be open for the co-creator so that he can change between different roles and interpretations over time, just to mention some meanings of openness. The consequence of openness is therefore a hybridisation between the audience and designer-composer. The democratic potential is that everybody can become a co-creator, on his or her personal level of interaction, expertise and engagement.
+
+Members of the group MusicalFieldsForever are Anders-Petter Andersson, Birgitta Cappelen, and Fredrik Olofsson. They have worked together since 2000 when they met at the Swedish Interactive Institute. The group has exhibited their artworks in places such as the MusicMakers event in Berlin, Ogaki Biennale at IAMAS in Japan, ICA in London (Institute of Contemporary Art), Rooseum in Malmö, Sweden (Centre for Contemporary Art), House of Culture in Stockholm, Sweden, Museum of Contemporary Art in Roskilde, Denmark, House of Culture in Hässleholm, Sweden, Designåret/Design Year H05 in Helsingborg, Sweden, DogA (Center for Design and Architecture) in Oslo, Contemporary Music and Art festival in Växjö, Sweden and Museum of Modern Art in Stockholm.

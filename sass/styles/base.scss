@@ -1,0 +1,354 @@
+@import "variables";
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $back_col;
+	color: $text_col;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 100%;	//1rem = 16px
+	line-height: 1.15rem;
+	margin: 0;
+}
+
+a:link {color: $link_col; text-decoration: none;}
+a:visited {color: $link_col; text-decoration: none;}
+a:active {color: $link_col; background: $head_col;}
+a:hover {color: $head_col; background: $dark_col;}
+
+div#content {
+	margin-bottom: $logo-height + ($menu-height * 1.25);	//distance from menu down to title
+	padding: 0 $padding;	//left and right hand side spacing for main content
+	@media only screen and (min-width: 544px) {
+		margin-bottom: $logo-height + ($menu-height * 0.25);	//distance from menu down to title
+	}
+	@media only screen and (min-width: $breakpoint) {
+		margin-bottom: $logo-height + ($menu-height * 1.5);	//distance from menu down to title
+		padding: 0 ($padding*3);	//left and right hand side spacing for main content
+	}
+}
+
+div#bottomspacer {
+	float: right;
+	margin: 7rem;	//extra spacing at the bottom of each page
+}
+
+div {
+	font-size: 0.75rem;	//main text font size (12px)
+}
+
+h3 {
+	color: $head_col;
+	font-size: 0.875rem;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+iframe {
+	border: 0;
+}
+
+[class*="col-"] {
+	float: left;
+}
+@media only screen and (min-width: $breakpoint) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	[class*="col-"] {
+		padding-right: 1.5rem;	//spacing between columns
+	}
+}
+
+div#recent ul, div#list ul {	//used on front page
+	line-height: 1.5rem;
+	list-style: none;
+	padding: 0;
+}
+div#full {	//the little show more link under recent
+	margin-top: 2rem;
+}
+
+div#contact img {	//email address
+	position: relative;
+	left: 2px;
+	top: 4px;
+	height: 16px;
+	width: 160px;
+}
+
+div.tables table {
+	position: relative;
+	margin-bottom: 1.5em;	//spacing between tables (e.g. years in calendar)
+	table-layout: fixed;
+	width: 100vw;
+	
+	left: 0 - $padding;
+	@media only screen and (min-width: $breakpoint) {
+		left: 0 - ($padding*3);
+	}
+	
+	tr {
+		line-height: 1.5em;
+		vertical-align: top;
+		
+		th {
+			background-color: $dark_col;
+			overflow: hidden;
+			padding-left: $padding;
+			text-align: left;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		
+		th, td {
+			padding-left: 0;
+			@media only screen and (min-width: $breakpoint) {
+				padding-left: $padding;
+			}
+		}
+		
+		th:nth-child(1), td:nth-child(1) {	//channel
+			width: 16%;
+			
+			padding-left: 0;
+			@media only screen and (min-width: $breakpoint) {
+				padding-left: ($padding*3);
+			}
+		}
+		th:nth-child(2), td:nth-child(2) {	//creator
+			width: 24%;
+		}
+		th:nth-child(3), td:nth-child(3) {	//work
+			width: 48%;
+		}
+		th:nth-child(4), td:nth-child(4) {	//date
+			width: 12%;
+		}
+	}
+}
+div.tables#calendar table tr {	//exception for calendar
+	th:nth-child(1) {	//(date)
+		width: 6em;
+		@media only screen and (min-width: $breakpoint) {
+			width: 12em;
+		}
+	}
+	th:nth-child(2) {	//(event)
+		visibility: hidden;
+		width: auto;
+	}
+}
+div.tables#exhi table tr {	//exception for exhibition
+	th:nth-child(1), td:nth-child(1) {	//date
+		width: 10%;
+	}
+	th:nth-child(2), td:nth-child(2) {	//institution
+		overflow-wrap: break-word;
+		width: 22%;
+	}
+	th:nth-child(3), td:nth-child(3) {	//event
+		overflow-wrap: break-word;
+		width: 22%;
+	}
+	th:nth-child(4), td:nth-child(4) {	//town
+		overflow-wrap: break-word;
+		width: 12%;
+	}
+	th:nth-child(5), td:nth-child(5) {	//country
+		overflow-wrap: break-word;
+		width: 12%;
+	}
+	th:nth-child(6), td:nth-child(6) {	//website
+		overflow-wrap: break-word;
+		width: 22%;
+	}
+}
+
+div#logo {
+	background-color: #000000CC;
+	border-bottom: 1px solid $yell_col;
+	line-height: 1.5rem;
+	position: fixed;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+	
+	font-size: 1rem;
+	height: 7.5rem;	//black curtain height
+	letter-spacing: 0.4rem;
+	padding-top: 0;
+	@media only screen and (min-width: 440px) {
+		height: 5rem;	//black curtain height
+	}
+	@media only screen and (min-width: $breakpoint) {
+		font-size: 1.5rem;
+		height: 7.7rem;	//black curtain height
+		letter-spacing: 0.6rem;
+		padding-top: (($logo_height - 1.5rem) / 2);
+	}
+}
+
+div#menu {
+	ul {
+		background: url("/images/stripes2.gif") repeat-x;
+		border-bottom: 1px solid $yell_col;
+		font-size: 0.8rem;
+		font-weight: bold;
+		line-height: 2.1rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		text-align: center;
+		width: 100%;
+		z-index: 3;
+		
+		background-position:  center 8px;
+		height: 41px;	//distance to lower yellow border
+		top: $logo_height / 3;
+		@media only screen and (min-width: $breakpoint) {
+			background-position: center 8px;
+			height: 41px;	//distance to lower yellow border
+			top: $logo_height;
+		}
+		li {
+			display: inline-block;
+			white-space: nowrap;
+			a {
+				position: relative;
+				display: block;
+				
+				padding: 0 1.25rem;	//spacing between menu items
+				@media only screen and (min-width: $breakpoint) {
+					padding: 0 1.5rem;	//spacing between menu items
+				}
+			}
+			
+			a:link {color: $text_col;}
+			a:visited {color: $text_col;}
+			a:active {color: $text_col; background: $head_col;}
+			a:hover {color: $dark_col; background-color: $yell_col;}
+			a.aSEL {
+				color: $dark_col;
+			}
+			
+			div {
+				display: none;
+				height: 80vh;	//dropdown scroll
+				overflow: auto;	//dropdown scroll
+				position: absolute;
+				text-align: left;
+				a {
+					background: $yell_col;
+					border-top: 1px solid #000000;
+				}
+			}
+			span#l0 {
+				display: none;
+			}
+			span#l1 {
+				display: block;
+			}
+		}
+		li:nth-child(4) {	//hack!  todo somehow remove this hardcoded width for in-the-world
+			a {
+				width: 120px;
+				@media only screen and (min-width: $breakpoint) {
+					width: 136px;
+				}
+			}
+		}
+		li:nth-child(5) {	//hack!  todo somehow remove this hardcoded width for searching-voices
+			a {
+				width: 144px;
+				@media only screen and (min-width: $breakpoint) {
+					width: 160px;
+				}
+			}
+		}
+		li:hover {
+			background: $yell_col;
+			div {
+				display: block;
+			}
+			span#l0 {
+				display: block;
+			}
+			span#l1 {
+				display: none;
+			}
+		}
+		li.mSEL {
+			background: $yell_col;
+		}
+		
+	}
+}
+
+div#submenu {
+	left: 0;
+	position: fixed;
+	z-index: 2;
+	white-space: nowrap;
+	
+	top: ($logo_height / 3) + ($menu_height * 1.39);
+	@media only screen and (min-width: 568px) {
+		top: ($logo_height / 3) + ($menu-height * 0.69);
+	}
+	@media only screen and (min-width: $breakpoint) {
+		top: $logo_height + ($menu-height * 0.69);
+	}
+	
+	ul {
+		font-size: 0.75rem;
+		font-weight: bold;
+		line-height: 2.1rem;
+		list-style: none;
+		margin: 0 0;
+		padding: 0;
+		text-align: center;
+		width: 100vw;
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				
+				padding: 0 0;	//spacing between menu items
+				@media only screen and (min-width: 375px) {
+					padding: 0 0.33rem;
+				}
+				@media only screen and (min-width: $breakpoint) {
+					padding: 0 1rem;	//spacing between menu items
+				}
+			}
+			
+			a:link {color: $text_col;}
+			a:visited {color: $text_col;}
+			a:active {color: $text_col; background: $head_col;}
+			a:hover {color: $dark_col; background-color: $yell_col;}
+		}
+		li.mSEL {
+			background: $yell_col;
+		}
+	}
+}

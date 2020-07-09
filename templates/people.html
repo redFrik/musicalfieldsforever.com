@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block section %}
+{%- for page in section.pages %}
+<div class="col-4">
+    <h3>{{ page.title }}</h3>
+    {{ page.content | safe }}
+</div>
+{%- endfor %}
+{% endblock section %}

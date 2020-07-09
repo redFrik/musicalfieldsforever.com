@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block section %}
+{%- set section = get_section(path = page.ancestors | last, metadata_only = true ) %}
+<div id="submenu" class="col-12">{%- include "submenu.html" -%}</div>
+<div class="col-12">
+    <h3>{{ section.title }}: Exhibited</h3>
+    <div class="tables" id="exhi">
+        {{ page.content | safe }}
+    </div>
+</div>
+{% endblock section %}

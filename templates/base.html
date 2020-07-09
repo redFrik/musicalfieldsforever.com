@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <meta name="author" content="F.Olofsson & B.Cappelen & A.Andersson">
+  {% block description %}<meta name="description" content="{{ config.description }}">{% endblock description %}
+  <meta name="dcterms.rightsHolder" content="Fredrik Olofsson, Birgitta Cappelen, Anders-Petter Andersson">
+  <meta name="dcterms.dateCopyrighted" content="2020">
+  <meta name="copyright" content="&copy; 2005-2020 F.Olofsson & B.Cappelen & A.Andersson">
+  <meta name="allow-search" content="YES">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#000000">
+  
+  <link rel="stylesheet" href="{{ get_url(path="styles/base.css", trailing_slash=false) | safe }}">
+  <!-- <link rel="stylesheet" href="/styles/base.css"> -->
+</head>
+
+<body>
+  <header>
+    <div id="logo">{{ config.title }}</div>
+    <div id="menu">{%- include "menu.html" -%}</div>
+  </header>
+  <main>
+    <section>
+      <div id="content">
+        {%- block section %}{% endblock section -%}
+      </div>
+    </section>
+  </main>  
+  <footer>
+    <div id="bottomspacer"></div>
+  </footer>
+</body>
+</html>

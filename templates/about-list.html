@@ -1,0 +1,8 @@
+<h3>Interactive Art Installations:</h3>
+<ul>
+    {%- set sections = get_section(path = "interactive-art/_index.md") %}
+    {%- for path in sections.subsections %}
+    {%- set section = get_section(path = path, metadata_only = true) %}
+    <li><a href="{{ section.permalink | safe }}">{{ section.title }}</a></li>
+    {%- endfor %}
+</ul>
