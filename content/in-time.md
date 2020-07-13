@@ -115,7 +115,7 @@ weight = 1
 
 | 2009 | |
 | - | - |
-| Sep 28-30 | MFF exhibits interactive installation [Searching Voices](/interactive-art/searching-voices) at [ISCM World New Music Days](http://www.listentotheworld.se/), Växjö, Sweden |
+| Sep 28-30 | MFF exhibits interactive installation [Searching Voices](/interactive-art/searching-voices) at [ISCM World New Music Days](https://web.archive.org/web/20090805132750/http://www.listentotheworld.se/), Växjö, Sweden |
 | Aug 30 - Sep 1 | MFF exhibition, [Engaging Artifacts](http://ocs.sfu.ca/nordes/index.php/nordes/2009/index) Nordes 09, Oslo, Norway |
 | Jun 24-26 | MFF exhibition and poster, [pHealth 2009](http://www.sintef.no/Projectweb/pHealth2009/), Oslo, Norway |
 | Jun 7-11 | MFF [music furniture workshop](http://www.naba.it/gfx/pdf/programma_SoundFurnitureWorkshop.pdf), [NABA](http://www.naba.it), Nuova Accademia di Belle Arti, Milano, Italy |
@@ -126,7 +126,7 @@ weight = 1
 | - | - |
 | Dec 12 | MFF presents at [Kristianstad University](http://www.hkr.se/templates/Page____7276.aspx), Sweden |
 | Oct 22-23 | MFF presents paper at [Audiomostly 2008](http://www.audiomostly.com) at Interactive Institute in Piteå, Sweden |
-| Sep 26-27 | MFF exhibits [Orfi-voxx] at [COMA-festival](http://www.comasweden.se) in Växjö, Sweden |
+| Sep 26-27 | MFF exhibits [Orfi-voxx] at [CoMA-festival](https://web.archive.org/web/20090809141344/http://www.comasweden.se/coma/main.asp?linksubID=1) in Växjö, Sweden |
 | Sep 19-24 | MFF exhibits [Orfi-voxx] at [Ogaki biennale](http://www.iamas.ac.jp/biennale08/E/works_ogaki_fukei.html) in Japan |
 | Sep 10-11 | MFF presents [Orfi-voxx] at Musikkteknologidagene 2008 at BEK and Griegakademiet in Bergen, Norway |
 | Aug 5-8 | MFF presents paper at [15th Nordic Musicological Congress 2008](http://www.nmh.no/Konferanser/15th_Nordic_Musicological_Congress_2008/55944/no) in Oslo, Norway |

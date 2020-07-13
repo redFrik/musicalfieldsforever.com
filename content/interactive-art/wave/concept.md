@@ -7,7 +7,7 @@ The wave concepts...
 
 <iframe title="Wave Carpet - playing with the camera" src="//player.vimeo.com/video/38722020?title=0&amp;byline=0&amp;portrait=0" width="333" height="187" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 </iframe>
-<noscript><br>Your browser does not support JavaScript! - Vimeo require js to play</noscript>
+<noscript><br>You need to enable JavaScript to use Vimeo!</noscript>
 
 Playing with the camera in the interactive carpet Wave. For more information [www.RHYME.no](http://www.rhyme.no/)
 
