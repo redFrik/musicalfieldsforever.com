@@ -2,11 +2,11 @@
 
 {% block section %}
 <div class="col-7" id="list">
-    <h3>{{ section.title }}</h3>
-    {{ section.content | safe }}
-    {%- include "about-list.html" -%}
+	<h3>{{ section.title }}</h3>
+	{{ section.content | safe }}
+	{%- include "about-list.html" -%}
 </div>
 <div id="recent" class="col-5">
-    {%- include "about-recent.html" -%}
+	{%- include "about-recent.html" -%}
 </div>
 {% endblock section %}

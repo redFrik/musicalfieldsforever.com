@@ -17,31 +17,31 @@
 {# {%- set level2 = path | split(pat = "/") | nth(n = 2) %} #}
 
 <nav>
-    <ul>
-        <li {% if level0 == "" %}class="mSEL"{% endif %}><a href="/">about</a></li>
-        <li {% if level0 == "people" %}class="mSEL"{% endif %}><a href="/people">people</a></li>
-        <li {% if level0 == "contact" %}class="mSEL"{% endif %}><a href="/contact">contact</a></li>
-        <li {% if level0 == "in-time" or level0 == "publications" or level0 == "in-media" %}class="mSEL"{% endif %}><a href="/in-time">in the world</a>
-            <div>
-                <a {% if level0 == "in-time" %}class="aSEL"{% endif %} href="/in-time">in time</a>
-                <a {% if level0 == "publications" %}class="aSEL"{% endif %} href="/publications">publications</a>
-                <a {% if level0 == "in-media" %}class="aSEL"{% endif %} href="/in-media">in media</a>
-            </div>
-        </li>
-        <li {% if level0 == "interactive-art" %}class="mSEL aSEL"{% endif %}>
-            <a href="/interactive-art">
-                {%- if level1 %}
-                <span id="l1">{{ level1 | replace(from = "-", to = " " ) }}</span>
-                <span id="l0">interactive-art</span>
-                {%- else %}
-                interactive-art
-                {%- endif %}
-            </a>
-            <div>
-                {%- for installation in installations %}
-                <a {% if level1 == installation | slugify %}class="aSEL"{% endif %} href="/interactive-art/{{ installation | slugify }}/concept">{{ installation }}</a>
-                {%- endfor %}
-            </div>
-        </li>
-    </ul>
+	<ul>
+		<li {% if level0 == "" %}class="mSEL"{% endif %}><a href="/">about</a></li>
+		<li {% if level0 == "people" %}class="mSEL"{% endif %}><a href="/people">people</a></li>
+		<li {% if level0 == "contact" %}class="mSEL"{% endif %}><a href="/contact">contact</a></li>
+		<li {% if level0 == "in-time" or level0 == "publications" or level0 == "in-media" %}class="mSEL"{% endif %}><a href="/in-time">in the world</a>
+			<div>
+				<a {% if level0 == "in-time" %}class="aSEL"{% endif %} href="/in-time">in time</a>
+				<a {% if level0 == "publications" %}class="aSEL"{% endif %} href="/publications">publications</a>
+				<a {% if level0 == "in-media" %}class="aSEL"{% endif %} href="/in-media">in media</a>
+			</div>
+		</li>
+		<li {% if level0 == "interactive-art" %}class="mSEL aSEL"{% endif %}>
+			<a href="/interactive-art">
+				{%- if level1 %}
+				<span id="l1">{{ level1 | replace(from = "-", to = " " ) }}</span>
+				<span id="l0">interactive-art</span>
+				{%- else %}
+				interactive-art
+				{%- endif %}
+			</a>
+			<div>
+				{%- for installation in installations %}
+				<a {% if level1 == installation | slugify %}class="aSEL"{% endif %} href="/interactive-art/{{ installation | slugify }}/concept">{{ installation }}</a>
+				{%- endfor %}
+			</div>
+		</li>
+	</ul>
 </nav>

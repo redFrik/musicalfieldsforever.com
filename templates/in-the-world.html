@@ -2,9 +2,9 @@
 
 {% block section %}
 <div class="col-12">
-    <h3>{{ page.title }}</h3>
-    <div class="tables" id="{{ page.title | slugify }}">
-        {{ page.content | safe }}
-    </div>
+	<h3>{{ page.title }}</h3>
+	<div class="tables" id="{{ page.title | slugify }}">
+		{{ page.content | safe }}
+	</div>
 </div>
 {% endblock section %}

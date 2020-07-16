@@ -6,10 +6,10 @@
 {%- set columns = page.content | split(pat = "<!-- break -->") %}
 {%- for column in columns %}
 <div class="col-6">
-    {%- if loop.first %}
-    <h3>{{ section.title }}: Concept & Experience</h3>
-    {%- endif %}
-    {{ column | safe }}
+	{%- if loop.first %}
+	<h3>{{ section.title }}: Concept & Experience</h3>
+	{%- endif %}
+	{{ column | safe }}
 </div>
 {%- endfor %}
 {% endblock section %}
