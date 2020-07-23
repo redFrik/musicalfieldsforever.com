@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block section %}
+{%- block section -%}
 <div class="col-4">
 	<h3>{{ page.title }}</h3>
 	{{ page.content | safe }}
 </div>
 <div class="col-8"></div>
-{% endblock section %}
+{%- endblock section -%}

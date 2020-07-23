@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block section %}
+{%- block section -%}
 <div class="col-7" id="list">
 	<h3>{{ section.title }}</h3>
 	{{ section.content | safe }}
@@ -9,4 +9,4 @@
 <div id="recent" class="col-5">
 	{%- include "about-recent.html" -%}
 </div>
-{% endblock section %}
+{%- endblock section -%}

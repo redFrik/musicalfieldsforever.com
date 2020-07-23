@@ -1,29 +1,29 @@
 <h3>Recent Activity:</h3>
 <ul>
-	{%- set numberOfLines = 18 %}
-	{%- set insertImageAt = 7 %}
-	{%- set count = 0 %}
-	{%- set events = [] %}
-	{%- set calendar = get_page(path = "in-time.md") %}
-	{%- set years = calendar.content | split(pat = "<tbody>") | slice(start = 1) %}
-	{%- for year in years %}
-	{%- for line in year | split(pat = "\n") %}
-	{%- if line is starting_with("<tr><td>") %}
-	{%- set_global count = count + 1 %}
-	{%- if count > numberOfLines %}{%- break %}{% endif %}
-	{%- if count == insertImageAt %}
+	{%- set numberOfLines = 18 -%}
+	{%- set insertImageAt = 7 -%}
+	{%- set count = 0 -%}
+	{%- set events = [] -%}
+	{%- set calendar = get_page(path = "in-time.md") -%}
+	{%- set years = calendar.content | split(pat = "<tbody>") | slice(start = 1) -%}
+	{%- for year in years -%}
+	{%- for line in year | split(pat = "\n") -%}
+	{%- if line is starting_with("<tr><td>") -%}
+	{%- set_global count = count + 1 -%}
+	{%- if count > numberOfLines -%}{%- break -%}{%- endif -%}
+	{%- if count == insertImageAt -%}
 </ul>
 <a href="/interactive-art/strainings/">
 	<img src="/images/DSCN0073SM.gif" alt="Strainings gif animation" title="Strainings">
 </a>
 <ul>
-	{%- endif %}
+	{%- endif -%}
 	<li>
 		{{line | replace(from = "<tr><td>", to = "") | replace(from = "</td><td>", to = " - ") | replace(from = "</td></tr>", to = "") | safe }}
 	</li>
-	{%- endif %}
-	{%- endfor %}
-	{%- endfor %}
+	{%- endif -%}
+	{%- endfor -%}
+	{%- endfor -%}
 </ul>
 <div id="full">
 	see full <a href="in-time">calendar</a>

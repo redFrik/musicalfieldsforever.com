@@ -1,14 +1,14 @@
 <div>
-	{%- set section = get_section(path = "interactive-art/_index.md", metadata_only = true) %}
-	{%- set paths = section.subsections %}
-	{%- for path in paths %}
-	{%- set subsection = get_section(path = path) %}
-	{%- for asset in subsection.assets %}
-	{%- if asset is matching("[.](jpg|png)$") %}
+	{%- set section = get_section(path = "interactive-art/_index.md", metadata_only = true) -%}
+	{%- set paths = section.subsections -%}
+	{%- for path in paths -%}
+	{%- set subsection = get_section(path = path) -%}
+	{%- for asset in subsection.assets -%}
+	{%- if asset is matching("[.](jpg|png)$") -%}
 	<a href="{{ get_url(path= subsection.path) | safe }}">
 		<img src="/{{ asset | safe }}" alt="{{ subsection.title }}" title="{{ subsection.title }}" />
 	</a>
-	{%- endif %}
-	{%- endfor %}
-	{%- endfor %}
+	{%- endif -%}
+	{%- endfor -%}
+	{%- endfor -%}
 </div>

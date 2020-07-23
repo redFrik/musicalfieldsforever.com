@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
-{% block section %}
-{%- set section = get_section(path = page.ancestors | last, metadata_only = true ) %}
+{%- block section -%}
+{%- set section = get_section(path = page.ancestors | last, metadata_only = true ) -%}
 <div id="submenu" class="col-12">{%- include "submenu.html" -%}</div>
-{%- set columns = page.content | split(pat = "<!-- break -->") %}
-{%- for column in columns %}
+{%- set columns = page.content | split(pat = "<!-- break -->") -%}
+{%- for column in columns -%}
 <div class="col-6">
-	{%- if loop.first %}
+	{%- if loop.first -%}
 	<h3>{{ section.title }}: System description</h3>
-	{%- endif %}
+	{%- endif -%}
 	{{ column | safe }}
 </div>
-{%- endfor %}
-{% endblock section %}
+{%- endfor -%}
+{%- endblock section -%}

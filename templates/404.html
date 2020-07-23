@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block section %}
+{%- block section -%}
 <div class="col-12">
 	<h3>404: Page not found</h3>
 	<p>Sorry, that URL does not exist.</p>
-	<p><a href={{ config.base_url }}>home</a></p>
+	<p><a href={{ config.base_url | safe }}>home</a></p>
 </div>
-{% endblock section %}
+{%- endblock section -%}

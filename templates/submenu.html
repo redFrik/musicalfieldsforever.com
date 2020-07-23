@@ -1,11 +1,12 @@
 <nav>
 	<ul>
-		{%- set subsections = ["concept", "system", "exhibited", "collaborators", "more"] %}
-		{%- set currentsubsection = current_path | split(pat="/") | nth(n = 2) %}
-		{%- for subsection in subsections %}
+		{%- set subsections = ["concept", "system", "exhibited", "collaborators", "more…"] -%}
+		{%- set titles = ["Concept & Experience", "System description", "Exhibited", "Collaborators & Sponsors", "Additional Information"] -%}
+		{%- set currentsubsection = current_path | split(pat="/") | nth(n = 2) -%}
+		{%- for subsection in subsections -%}
 		<li {% if currentsubsection == subsection %}class="mSEL"{% endif %}>
-			<a href="/{{ section.path | safe }}{{ subsection }}">{{ subsection }}</a>
+			<a href="/{{ section.path | safe }}{{ subsection | replace(from = "…", to = "" ) }}" title="{{ titles | nth(n = loop.index0) }}">{{ subsection }}</a>
 		</li>
-		{%- endfor %}
+		{%- endfor -%}
 	</ul>
 </nav>
