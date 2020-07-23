@@ -83,6 +83,11 @@ div#recent ul, div#list ul {	//used on front page
 	list-style: none;
 	padding: 0;
 }
+div#list ul li a {
+	display: inline-block;
+	padding: 0.275rem 0;
+	width: 100%;
+}
 div#full {	//the little show more link under recent
 	margin-top: 2rem;
 }
