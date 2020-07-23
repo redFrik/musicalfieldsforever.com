@@ -22,7 +22,7 @@ a:visited {color: $link_col; text-decoration: none;}
 a:active {color: $link_col; background: $head_col;}
 a:hover {color: $head_col; background: $dark_col;}
 
-div#content {
+section {
 	margin-bottom: $logo-height + ($menu-height * 1.25);	//distance from menu down to title
 	padding: 0 $padding;	//left and right hand side spacing for main content
 	@media only screen and (min-width: 544px) {
@@ -34,9 +34,11 @@ div#content {
 	}
 }
 
-div#bottomspacer {
-	float: right;
-	margin: 7rem;	//extra spacing at the bottom of each page
+footer {
+	div#bottom-spacer {
+		float: right;
+		margin: 7rem;	//extra spacing at the bottom of each page
+	}
 }
 
 div {
@@ -51,6 +53,12 @@ h3 {
 img {
 	height: auto;
 	max-width: 100%;
+}
+
+#gallery img {
+	height: 64px;
+	width: 64px;
+	object-fit: contain;
 }
 
 iframe {

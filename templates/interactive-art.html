@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {%- block section -%}
-<div class="col-12">
+<div class="col-12" id="gallery">
 	<h3>{{ section.title }}</h3>
 	{{ section.content | safe }}
 	{%- include "gallery.html" -%}

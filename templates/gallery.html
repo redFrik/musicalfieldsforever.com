@@ -6,7 +6,7 @@
 	{%- for asset in subsection.assets -%}
 	{%- if asset is matching("[.](jpg|png)$") -%}
 	<a href="{{ get_url(path= subsection.path) | safe }}">
-		<img src="/{{ asset | safe }}" alt="{{ subsection.title }}" title="{{ subsection.title }}" />
+		<img src="/{{ asset | safe }}" title="{{ subsection.title }}" />
 	</a>
 	{%- endif -%}
 	{%- endfor -%}
