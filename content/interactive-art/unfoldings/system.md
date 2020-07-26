@@ -7,7 +7,7 @@ Unfoldings consists of 18 cushion-like, body sized soft objects in red textile, 
 
 The system is constructed as a three-level model. The first level represent/is the identy of unfoldings it self, with selfgenerated output in sound, light and movingf images. The second level is the interaction level, reacting directly upon what the users do. The third level is the collaboration-level, which remembers what has happened, logs it and create output related to collaboration over time, in light, sound and moving images.
 
-The Unfoldings software is developed in [SuperCollider](http://supercollider.github.io) and [Jitter/Max/MSP](https://cycling74.com) (graphics).
+The Unfoldings software is developed in [SuperCollider](https://supercollider.github.io) and [Jitter/Max/MSP](https://cycling74.com) (graphics).
 
 For further technical description and drawings contact MusicalFieldsForever.
 

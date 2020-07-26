@@ -5,7 +5,7 @@ template = "interactive-art-exhi.html"
 
 [Arts Council Norway]: http://www.kulturradet.no/english
 [The Cultural Rucksack]: https://www.kulturtanken.org/
-[dksakershus.no]: http://www.dksakershus.no
+[dksakershus.no]: https://www.dksakershus.no
 
 | Date | Institution | Event | Town | Country | Website |
 | - | - | - | - | - | - |

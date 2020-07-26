@@ -5,7 +5,7 @@ template = "interactive-art-exhi.html"
 
 | Date | Institution | Event | Town | Country | Website |
 | - | - | - | - | - | - |
-| May-11 | [University of Oslo Library](http://www.ub.uio.no/english/) | NIME 2011, New Interfaces for Musical Expression | Oslo | Norway | [nime2011.org](http://www.nime2011.org/program/installations/) |
+| May-11 | [University of Oslo Library](https://www.ub.uio.no/english/) | NIME 2011, New Interfaces for Musical Expression | Oslo | Norway | [nime2011.org](http://www.nime2011.org/program/installations/) |
 | Feb-09 | [Konstfrämjandet](http://konstframjandet.se/) | Konst med alla sinnen (art with all senses) | Stockholm | Sweden | [Konst med alla sinnen](http://www.pohagstrom.org/Extensive%20Projects/projects/KMAS.html) |
 | Aug-09 | The Oslo School of Architecture and Design | Nordes 09, Engaging Artifacts | Oslo | Norway | [ocs.sfu.ca/nordes/index.php/nordes/2009/index](http://ocs.sfu.ca/nordes/index.php/nordes/2009/index) |
 | Sep-08 | CoMA, Contemporary Music and Artists | CoMA Festival | Växjö | Sweden | [comasweden.se](https://web.archive.org/web/20090809141344/http://www.comasweden.se/coma/main.asp?linksubID=1) |
