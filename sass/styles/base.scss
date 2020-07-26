@@ -352,9 +352,7 @@ div#submenu {
 		li {
 			display: inline-block;
 			a {
-				display: block;
-				
-				padding: 0 0;	//spacing between menu items
+				padding: 0 0.25rem;	//spacing between menu items
 				@media only screen and (min-width: 375px) {
 					padding: 0 0.33rem;
 				}
