@@ -22,6 +22,26 @@ a:visited {color: $link_col; text-decoration: none;}
 a:active {color: $link_col; background: $head_col;}
 a:hover {color: $head_col; background: $dark_col;}
 
+nav {
+	ul {
+		li {
+			a:link {color: $text_col;}
+			a:visited {color: $text_col;}
+			a:active {color: $text_col; background: $head_col;}
+			a:hover {color: $dark_col; background-color: $yell_col;}
+		}
+		li.mSEL {
+			background: $yell_col;
+			a {color: $dark_col;}
+			div {	//submenu
+				a {color: $text_col;}
+				a.aSEL {color: $dark_col;}
+			}
+		}
+		
+	}
+}
+
 section {
 	margin-bottom: $logo-height + ($menu-height * 1.25);	//distance from menu down to title
 	padding: 0 $padding;	//left and right hand side spacing for main content
@@ -257,14 +277,6 @@ div#menu {
 				}
 			}
 			
-			a:link {color: $text_col;}
-			a:visited {color: $text_col;}
-			a:active {color: $text_col; background: $head_col;}
-			a:hover {color: $dark_col; background-color: $yell_col;}
-			a.aSEL {
-				color: $dark_col;
-			}
-			
 			div {
 				display: none;
 				height: 80vh;	//dropdown scroll
@@ -311,10 +323,6 @@ div#menu {
 				display: none;
 			}
 		}
-		li.mSEL {
-			background: $yell_col;
-		}
-		
 	}
 }
 
@@ -354,14 +362,6 @@ div#submenu {
 					padding: 0 1rem;	//spacing between menu items
 				}
 			}
-			
-			a:link {color: $text_col;}
-			a:visited {color: $text_col;}
-			a:active {color: $text_col; background: $head_col;}
-			a:hover {color: $dark_col; background-color: $yell_col;}
-		}
-		li.mSEL {
-			background: $yell_col;
 		}
 	}
 }
