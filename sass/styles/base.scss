@@ -49,6 +49,8 @@ section {
 		margin-bottom: $logo-height + ($menu-height * 0.25);	//distance from menu down to title
 	}
 	@media only screen and (min-width: $breakpoint) {
+		margin: 0 auto;
+		max-width: 66.67rem;
 		margin-bottom: $logo-height + ($menu-height * 1.5);	//distance from menu down to title
 		padding: 0 ($padding*3);	//left and right hand side spacing for main content
 	}
@@ -132,7 +134,7 @@ div.tables table {
 	position: relative;
 	margin-bottom: 1.5em;	//spacing between tables (e.g. years in calendar)
 	table-layout: fixed;
-	width: 100vw;
+	width: 100%;
 	
 	left: 0 - $padding;
 	@media only screen and (min-width: $breakpoint) {
