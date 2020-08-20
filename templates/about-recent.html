@@ -1,3 +1,20 @@
+{%- set upcoming = get_page(path = "upcoming.md") -%}
+{%- if upcoming.content | length > 150 -%}
+<h3>Upcoming Activity:</h3>
+<ul>
+{%- set upcoming_entries = upcoming.content | split(pat = "<tbody>") | slice(start = 1) -%}
+{%- for upcoming_entry in upcoming_entries -%}
+{%- for line in upcoming_entry | split(pat = "\n") -%}
+{%- if line is starting_with("<tr><td>") -%}
+<li>
+	{{line | replace(from = "<tr><td>", to = "") | replace(from = "</td><td>", to = " - ") | replace(from = "</td></tr>", to = "") | safe }}
+</li>
+{%- endif -%}
+{%- endfor -%}
+{%- endfor -%}
+</ul>
+{%- endif -%}
+
 <h3>Recent Activity:</h3>
 <ul>
 	{%- set numberOfLines = 18 -%}
