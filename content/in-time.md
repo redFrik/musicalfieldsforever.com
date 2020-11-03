@@ -13,6 +13,10 @@ weight = 1
 [1]: https://musicalfieldsforever.com/rhyme/?p=4623
 [2]: http://www.kulturradet.no/vis-publikasjon/-/publication-the-cultural-rucksack
 
+| 2020 | |
+| - | - |
+| Oct 2020 | MFF workshop, Inspire to Move - Home:Online, [AHO](https://www.aho.no/) |
+
 | 2019 | |
 | - | - |
 | Oct 2019 | MFF workshop, [Invite and Inspire to Dance](https://www.instagram.com/p/B4UmCIdAe0v/?hl=nb), [AHO](https://www.aho.no/) |
