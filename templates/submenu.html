@@ -2,10 +2,10 @@
 	<ul>
 		{%- set subsections = ["concept", "system", "exhibited", "collaborators", "more"] -%}
 		{%- set titles = ["Concept & Experience", "System description", "Exhibited", "Collaborators & Sponsors", "Additional Information"] -%}
-		{%- set currentsubsection = current_path | split(pat = "/") | nth(n = 2) -%}
+		{%- set currentsubsection = current_path | split(pat = "/") | nth(n = 3) -%}
 		{%- for subsection in subsections -%}
 		<li {% if currentsubsection == subsection %}class="mSEL"{% endif %}>
-			<a href="/{{ section.path | safe }}{{ subsection }}" title="{{ titles | nth(n = loop.index0) }}">
+			<a href="{{ section.path | safe }}{{ subsection }}" title="{{ titles | nth(n = loop.index0) }}">
 				{%- if subsection == "more" -%}
 				{{ subsection ~ "…" }}
 				{%- else -%}

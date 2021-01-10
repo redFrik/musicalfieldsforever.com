@@ -12,9 +12,9 @@
 {%- else -%}
 {%- set path = "" -%}
 {%- endif -%}
-{%- set level0 = path | split(pat = "/") | nth(n = 0) -%}
-{%- set level1 = path | split(pat = "/") | nth(n = 1) -%}
-{# {%- set level2 = path | split(pat = "/") | nth(n = 2) -%} #}
+{%- set level0 = path | split(pat = "/") | nth(n = 1) -%}
+{%- set level1 = path | split(pat = "/") | nth(n = 2) -%}
+{# {%- set level2 = path | split(pat = "/") | nth(n = 3) -%} #}
 
 <nav>
 	<ul>
