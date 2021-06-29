@@ -1,10 +1,5 @@
+on: push
 name: CI
-on:
-source branch
-  push:
-    branches: [ source ]
-  pull_request:
-    branches: [ source ]
 jobs:
   build:
     runs-on: ubuntu-latest
