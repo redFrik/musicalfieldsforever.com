@@ -13,6 +13,10 @@ weight = 1
 [1]: https://musicalfieldsforever.com/rhyme/?p=4623
 [2]: http://www.kulturradet.no/vis-publikasjon/-/publication-the-cultural-rucksack
 
+| 2021 | |
+| - | - |
+| Jun 9-11 | MFF presents paper, [Trans-Create - Co-Design with Persons with Severe Disabilities](https://), at [UD2021](https://ud2020.aalto.fi/) |
+
 | 2020 | |
 | - | - |
 | Oct 2020 | MFF workshop, Inspire to Move - Home:Online, [AHO](https://www.aho.no/) |
