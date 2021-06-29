@@ -11,4 +11,5 @@ jobs:
         env:
           PAGES_BRANCH: build
           BUILD_DIR: .
+          BUILD_ONLY: true
           TOKEN: ${{ secrets.PUBLIC_TOKEN }}
