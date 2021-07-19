@@ -15,7 +15,7 @@ weight = 1
 
 | 2021 | |
 | - | - |
-| Jun 9-11 | MFF presents paper, [Trans-Create - Co-Design with Persons with Severe Disabilities](https://), at [UD2021](https://ud2020.aalto.fi/) |
+| Jun 9-11 | MFF presents paper, [Trans-Create - Co-Design with Persons with Severe Disabilities](/media/SHTI-282-SHTI210387.pdf), at [UD2021](https://ud2020.aalto.fi/) |
 
 | 2020 | |
 | - | - |

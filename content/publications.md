@@ -7,6 +7,7 @@ weight = 2
 
 | Channel | Creator | Work | Date |
 | - | - | - | - |
+| Article | Cappelen, B., Andersson A-P. | [Universal Design 2021: From Special to Mainstream Solutions](/media/SHTI-282-SHTI210387.pdf), at [UD2021](https://ud2020.aalto.fi/), Aalto University | Jun-21 |
 | Paper | Cappelen, B., Andersson A-P. | [Cultural Artefacts with Virtual Capabilities Enhance Self-Expression Possibilities for Children with Special Needs](http://hdl.handle.net/11250/2584938), at [The Universal Design and Higher Education in Transformation Congress, UDHEIT2018](https://www.udheit2018.com/), Dublin | Oct-18 |
 | Paper | Cappelen, B., Andersson A-P. | [Vitalizing Health Promoting Technology for Elderly in Design Education](https://app.cristin.no/results/show.jsf?id=1599225), at [20th Engineering & Product Design Education International Conference, E&PDE2018](http://epde.info/epde2018/), London | Sep-18 |
 | Book Chapter | Cappelen, B., Andersson A-P. | [The Health Promoting Potential of Interactive Art](https://link.springer.com/chapter/10.1007%2F978-3-319-94274-2_70), [ICCHP2018, Computers Helping People with Special Needs](https://link.springer.com/book/10.1007/978-3-319-94277-3), Springer Nature, 479 - 484 | Jul-18 |
