@@ -57,7 +57,7 @@ section {
 }
 
 footer {
-	div#bottom-spacer {
+	#bottom-spacer {
 		float: right;
 		margin: 7rem;	//extra spacing at the bottom of each page
 	}
@@ -108,27 +108,27 @@ iframe {
 	}
 }
 
-div#installations li {
+#installations li {
 	padding: 0.25rem;
 }
-div#recent ul, div#list ul {	//used on front page
+#recent ul, #list ul {	//used on front page
 	line-height: 1.15rem;
 	list-style: none;
 	padding: 0;
 }
-div#recent li {
+#recent li {
 	margin-bottom: 0.5rem;
 }
-div#list ul li a {
+#list ul li a {
 	display: inline-block;
 	padding: 0.275rem 0;
 	width: 100%;
 }
-div#full {	//the little show more link under recent
+#full {	//the little show more link under recent
 	margin-top: 2rem;
 }
 
-div#contact img {	//email address
+#contact img {	//email address
 	position: relative;
 	left: 2px;
 	top: 4px;
@@ -136,7 +136,7 @@ div#contact img {	//email address
 	width: 160px;
 }
 
-div.tables table {
+.tables table {
 	position: relative;
 	margin-bottom: 1.5em;	//spacing between tables (e.g. years in calendar)
 	table-layout: fixed;
@@ -186,7 +186,7 @@ div.tables table {
 		}
 	}
 }
-div.tables#calendar table tr {	//exception for calendar
+.tables#calendar table tr {	//exception for calendar
 	th:nth-child(1) {	//(date)
 		width: 6em;
 		@media only screen and (min-width: $breakpoint) {
@@ -198,7 +198,7 @@ div.tables#calendar table tr {	//exception for calendar
 		width: auto;
 	}
 }
-div.tables#exhi table tr {	//exception for exhibition
+.tables#exhi table tr {	//exception for exhibition
 	th:nth-child(1), td:nth-child(1) {	//date
 		width: 10%;
 	}
@@ -224,7 +224,7 @@ div.tables#exhi table tr {	//exception for exhibition
 	}
 }
 
-div#logo {
+#logo {
 	background-color: rgba(0, 0, 0, 0.8);
 	border-bottom: 1px solid $yell_col;
 	line-height: 1.5rem;
@@ -249,7 +249,7 @@ div#logo {
 	}
 }
 
-div#menu {
+#menu {
 	ul {
 		background: url("/images/stripes2.gif") repeat-x;
 		border-bottom: 1px solid $yell_col;
@@ -334,7 +334,7 @@ div#menu {
 	}
 }
 
-div#submenu {
+#submenu {
 	left: 0;
 	position: fixed;
 	z-index: 2;
